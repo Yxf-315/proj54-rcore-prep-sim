@@ -355,8 +355,8 @@ cargo fmt --check
 ## 14. 复现与提交
 
 ```bash
-git clone <希冀 GitLab 仓库地址> proj54-SynRun
-cd proj54-SynRun
+git clone https://github.com/<你的 GitHub 用户名>/proj54-rcore-prep-sim.git
+cd proj54-rcore-prep-sim
 cargo test                     # 43 项测试
 cargo run -- --check cases     # 8 个配套用例
 cargo run -- --exec examples/tour.txt

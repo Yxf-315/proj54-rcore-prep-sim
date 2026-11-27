@@ -74,8 +74,8 @@ memlab> lab lab3
 需要 Rust 1.75+（`cargo` 在 PATH 中），**不需要任何第三方 crate，也不需要联网**。
 
 ```bash
-git clone <希冀 GitLab 仓库地址> proj54-SynRun
-cd proj54-SynRun
+git clone https://github.com/<你的 GitHub 用户名>/proj54-rcore-prep-sim.git
+cd proj54-rcore-prep-sim
 cargo run                                # 交互模式
 cargo run -- --exec examples/tour.txt    # 回放完整演示脚本
 cargo run -- --check cases               # 运行配套测试样例

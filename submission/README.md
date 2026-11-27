@@ -6,7 +6,7 @@
 
 | 文件 | 内容 | 对应评审项 |
 | --- | --- | --- |
-| `01-source-link.md` | 希冀 GitLab 仓库地址、commit、构建命令 | 源代码 |
+| `01-source-link.md` | GitHub 仓库地址（主）、commit、构建命令 | 源代码 |
 | `02-design.docx` / `.pdf` | 设计实现文档（11 页） | 文档 30% |
 | `03-usage.docx` / `.pdf` | 使用说明（6 页） | 使用文档 |
 | `04-lab-guide.docx` / `.pdf` | 实验指导书（7 页） | 教学价值 10% |

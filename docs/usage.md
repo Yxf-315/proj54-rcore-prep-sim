@@ -30,8 +30,8 @@ PTE 原始值、权限位和最终物理地址；输入一次访存，就能看�
 ## 3. 安装
 
 ```bash
-git clone <希冀 GitLab 仓库地址> proj54-SynRun
-cd proj54-SynRun
+git clone https://github.com/<你的 GitHub 用户名>/proj54-rcore-prep-sim.git
+cd proj54-rcore-prep-sim
 cargo build --release
 ```
 

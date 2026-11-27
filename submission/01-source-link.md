@@ -2,18 +2,20 @@
 
 ## 仓库
 
-- 平台：大赛希冀 GitLab（course.educg.net）
-- 地址：`https://course.educg.net/<组>/proj54-SynRun`
+- 主仓库（GitHub）：`https://github.com/<你的GitHub用户名>/proj54-rcore-prep-sim`
 - 分支：`main`
 - 标签：`v1.0.0`
 - 提交：`<填入 commit hash>`
-- 镜像（可选）：`https://github.com/<org>/proj54-SynRun`
+- 希冀镜像：后续在希冀 GitLab 通过“导入 GitHub 仓库”生成，地址待补
+
+> 老师要求先在 GitHub 上维护，评审前再导入/镜像到希冀 GitLab；
+> 两边保持同一份 `main` 分支即可。
 
 ## 构建与运行
 
 ```bash
-git clone https://course.educg.net/<组>/proj54-SynRun.git
-cd proj54-SynRun
+git clone https://github.com/<你的GitHub用户名>/proj54-rcore-prep-sim.git
+cd proj54-rcore-prep-sim
 
 cargo test                      # 43 项测试
 cargo run -- --check cases      # 8 个配套用例
