@@ -1,0 +1,20 @@
+开源协议说明
+==============
+
+1. 源代码
+   本项目源代码采用 BSD 3-Clause License，全文见仓库根目录 LICENSE 文件。
+   该协议属于大赛允许的协议范围（GPL / Apache / BSD / 木兰 之一）。
+
+2. 文档、幻灯片与演示视频
+   本项目文档（设计实现文档、使用说明、实验指导书）、汇报幻灯片与演示视频
+   采用 CC BY-SA 4.0（署名—相同方式共享 4.0 国际）协议。
+
+3. 第三方参考
+   - rCore-Tutorial-Book（https://rcore-os.cn/rCore-Tutorial-Book-v3/）：
+     本项目参考其 Lab2/Lab3 的设计与术语，未复制其源代码；
+     设计文档第 7 节逐文件列出了对照关系。
+   - Rustlings（https://github.com/rust-lang/rustlings）：
+     参考其所有权练习的组织方式，未复制其代码。
+
+4. 原创声明
+   除上述参考外，本项目的代码、文档、幻灯片、视频均由 SynRun 队伍独立完成。
