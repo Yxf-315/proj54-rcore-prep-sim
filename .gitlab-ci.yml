@@ -1,0 +1,20 @@
+# 希冀 GitLab 上的流水线配置（若赛方启用了 Runner 会自动执行）。
+# 本地等价的四步命令见 docs/usage.md。
+
+image: rust:1.82-slim
+
+stages:
+  - test
+
+cache:
+  key: "$CI_COMMIT_REF_SLUG"
+  paths:
+    - target/
+
+test:
+  stage: test
+  script:
+    - cargo fmt --all --check
+    - cargo clippy --all-targets -- -D warnings
+    - cargo test --all
+    - cargo run --release -- --check cases --no-color

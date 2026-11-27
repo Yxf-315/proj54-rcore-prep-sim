@@ -1,0 +1,36 @@
+# rcore-memlab 演示脚本
+# 用 `memlab --exec examples/tour.txt` 回放，输出可直接贴进实验报告。
+
+# 1. 启动状态：内核只占用了根页表 1 帧
+status
+
+# 2. 连续分配 3 帧：观察水位线推进
+alloc 3
+frames
+
+# 3. 释放中间那一帧（根页表是 0x8_0000，所以这三帧是 0x8_0001..0x8_0003）
+free 0x8_0002
+
+# 4. 再分配 2 帧：第一帧会复用刚释放的 PPN（recycled 栈 LIFO）
+alloc 2
+
+# 5. 建立映射并逐级遍历 Sv39 页表
+map 0x1000 auto rw
+walk 0x1000
+
+# 6. 只有读权限的页：写访问会触发权限异常
+map 0x2000 auto r
+fault 0x2000 w
+
+# 7. 从未映射的地址：缺页发生在 L2
+fault 0x9_0000
+
+# 8. Rust 所有权演示：RAII 自动回收 / move / Rc / 双重释放
+demo raii
+demo move
+demo clone
+demo double-free
+
+# 9. 两个实验脚本
+lab lab2
+lab lab3

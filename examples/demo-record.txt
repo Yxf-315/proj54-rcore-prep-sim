@@ -1,0 +1,24 @@
+# 录屏专用命令序列（按分镜顺序粘贴）
+# 用法：memlab 启动后逐条粘贴；每粘贴一条，停顿 2-3 秒再下一条。
+
+# 镜 3：启动（在终端执行 cargo run 后进入交互）
+status
+
+# 镜 4：帧分配
+alloc 3
+frames
+
+# 镜 5：RAII
+demo raii
+
+# 镜 6–7：页表遍历
+map 0x1000 auto rw
+walk 0x1000
+
+# 镜 8：缺页与权限
+map 0x2000 auto r
+fault 0x2000 w
+fault 0x9000
+
+# 退出后用一条命令演示配套用例
+quit
