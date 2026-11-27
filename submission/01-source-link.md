@@ -2,10 +2,10 @@
 
 ## 仓库
 
-- 主仓库（GitHub）：`https://github.com/<你的GitHub用户名>/proj54-rcore-prep-sim`
+- 主仓库（GitHub）：`https://github.com/Yxf-315/proj54-rcore-prep-sim`
 - 分支：`main`
 - 标签：`v1.0.0`
-- 提交：`<填入 commit hash>`
+- 提交：`22cc7400e7ae4b1a1d2b71e7c073a96758044f05`
 - 希冀镜像：后续在希冀 GitLab 通过“导入 GitHub 仓库”生成，地址待补
 
 > 老师要求先在 GitHub 上维护，评审前再导入/镜像到希冀 GitLab；
@@ -14,7 +14,7 @@
 ## 构建与运行
 
 ```bash
-git clone https://github.com/<你的GitHub用户名>/proj54-rcore-prep-sim.git
+git clone https://github.com/Yxf-315/proj54-rcore-prep-sim.git
 cd proj54-rcore-prep-sim
 
 cargo test                      # 43 项测试
