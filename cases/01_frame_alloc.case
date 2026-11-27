@@ -1,0 +1,8 @@
+# 用例 01：物理帧分配（对应 rCore Lab2 的 FrameAllocator::alloc）
+# 预期：连续分配得到的 PPN 依次递增，且物理地址 = PPN × 4096。
+name: 物理帧连续分配
+cmd: alloc 3
+want: 已分配 3 个物理帧
+want: 0x8_0001
+want: 0x8_0003
+want: 0x8000_1000

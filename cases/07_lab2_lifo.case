@@ -1,0 +1,7 @@
+# 用例 07：LIFO 复用（对应 rCore 栈式分配器的 recycled 栈）
+# 预期：释放中间帧后再分配，第一帧直接复用刚释放的 PPN。
+name: 释放的帧按 LIFO 优先复用
+cmd: lab lab2
+want: 复用了 PPN
+want: LIFO
+want: 收尾

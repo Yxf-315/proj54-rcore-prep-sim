@@ -1,0 +1,7 @@
+# 用例 02：RAII 自动归还（对应 rCore 的 FrameTracker::drop）
+# 预期：进入作用域分配 2 帧、离开作用域后持有数回到演示前，不需要显式 free。
+name: RAII 自动归还物理帧
+cmd: demo raii
+want: Drop 自动归还
+want: 回到演示前
+want: 作用域外

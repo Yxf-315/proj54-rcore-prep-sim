@@ -1,0 +1,11 @@
+# 用例 03：建立映射并逐级遍历（对应 rCore Lab3 的 PageTable::map + find_pte）
+# 预期：VA 0x1000 的 VPN[2]=VPN[1]=0、VPN[0]=1，三级页表项都有效，最终翻译成功。
+name: 基础映射与三级遍历
+cmd: map 0x1000 auto rw
+cmd: walk 0x1000
+want: 映射建立成功
+want: L2
+want: L1
+want: L0
+want: R W -
+want: 翻译结果

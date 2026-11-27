@@ -1,0 +1,9 @@
+# 用例 08：Sv39 全流程（对应 rCore Lab3 的 map / translate / trap_handler）
+# 预期：脚本能走完映射、遍历、权限异常、缺页、unmap 全流程。
+name: Lab3 全流程演示
+cmd: lab lab3
+want: Sv39
+want: 翻译结果
+want: 权限异常
+want: 缺页异常
+want: 拆除 VA

@@ -1,0 +1,7 @@
+# 用例 05：未映射地址的缺页（对应 rCore 的 Page Fault - Load）
+# 预期：全新页表中根页表没有任何有效项，缺页发生在 L2。
+name: 未映射地址缺页发生在 L2
+cmd: fault 0x9000
+want: 缺页异常
+want: 第 2 级页表
+want: L2

@@ -1,0 +1,7 @@
+# 用例 06：所有权转移（对应 Rustlings 的 move_semantics）
+# 预期：move 之后原变量不可用（编译错误 E0382），并被 drop 自动归还。
+name: 所有权转移后原变量失效
+cmd: demo move
+want: 所有权转移
+want: E0382
+want: 自动归还

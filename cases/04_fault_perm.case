@@ -1,0 +1,8 @@
+# 用例 04：权限异常（对应 rCore 的 Page Fault - Store/AMO）
+# 预期：只映射了读权限的页，写访问在 L0 叶子项被拒绝。
+name: 只读页的写访问被拒绝
+cmd: map 0x2000 auto r
+cmd: fault 0x2000 w
+want: 权限异常
+want: 尝试写
+want: L0
