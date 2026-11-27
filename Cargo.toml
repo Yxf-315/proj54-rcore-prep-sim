@@ -1,0 +1,24 @@
+[package]
+name = "rcore-memlab"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+description = "rCore 内存实验室：把 Rust 所有权与 rCore Lab2/Lab3 的内存管理知识点变成可交互实验"
+license = "BSD-3-Clause"
+repository = "https://github.com/<your-org>/rcore-memlab"
+keywords = ["rcore", "os", "teaching", "sv39", "rustlings"]
+categories = ["education", "simulation"]
+
+[lib]
+name = "rcore_memlab"
+path = "src/lib.rs"
+
+[[bin]]
+name = "memlab"
+path = "src/main.rs"
+
+[dependencies]
+
+[profile.release]
+lto = true
+codegen-units = 1
