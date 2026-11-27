@@ -139,8 +139,7 @@ rcore-memlab/
 │   ├── usage.md       # 使用说明（交付物之一）
 │   ├── lab-guide.md   # 实验指导书
 │   ├── design.md      # 设计文档
-│   ├── submission.md  # 提交要点与时间线
-│   ├── plan-20d.md    # 华北区域赛 20 天冲刺计划
+│   ├── video-script.md # 演示视频脚本
 │   └── roadmap.md     # 三阶段路线图
 ├── tests/             # 端到端测试 + 用例回归
 ├── tools/             # 文档/幻灯片/试用表的生成脚本
@@ -184,14 +183,9 @@ A/D 位置位、重复映射拒绝、`release` 递归回收、命令解析、实
 
 ## 相关文档
 
-- [14 天冲刺计划](docs/plan-14d.md) —— 当前执行版（11/27–12/11）
-- [提交清单](docs/checklist.md) —— 12 月 9 日提交前逐项核对
-- [演示视频脚本](docs/video-script.md) —— 4 分钟分镜、旁白、录屏命令
-- [答辩手册](docs/defense-handbook.md) —— 8 分钟流程、20 个高频问题
 - [使用说明](docs/usage.md) —— 安装、命令参数、5 分钟上手、用例格式、与 rCore 源码对照
 - [实验指导书](docs/lab-guide.md) —— 学生怎么用、四个实验、思考题
 - [设计文档](docs/design.md) —— 需求、架构、数据结构、与 rCore 源码对照
-- [大赛提交要点](docs/submission.md) —— 材料清单、评分维度、视频脚本、答辩准备
 - [路线图](docs/roadmap.md)
 
 ## 许可
